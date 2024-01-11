@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.imageview.ShapeableImageView android:id="@+id/newsImage" android:layout_width="match_parent"
+        android:layout_height="200dp" android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/roundedSquare"
+        app:strokeWidth="5dp"
+        app:strokeColor="#FF0000"
+
+        />
+    <TextView android:id="@+id/newsTitle" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:paddingTop="8dp" android:textStyle="bold"/>
+    <TextView android:id="@+id/newsDescription" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="16sp" android:paddingTop="8dp"/>
+    <Button
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:text="Share">
+
+    </Button>
+</LinearLayout>
